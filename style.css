@@ -3,7 +3,7 @@
         --accent:#1d6fa5;
         --accent-2:#ffb400;
         --muted:#6b7280;
-        --card-bg:rgba(255,255,255,0.85);
+        --card-bg:rgba(253, 253, 253, 0.85);
     }
 
     *{
@@ -144,7 +144,7 @@
     }
     
     .hero-card{
-        background:linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.6));
+        background:linear-gradient(180deg, rgba(255,255,255,0.85), rgba(233, 230, 245, 0.6));
         padding:26px;
         border-radius:18px;
         box-shadow:0 10px 30px rgba(13,19,34,0.06);
@@ -266,7 +266,7 @@
         background:var(--card-bg);
         padding:16px;
         border-radius:12px;
-        box-shadow:0 8px 20px rgba(12,16,26,0.04);
+        box-shadow:0 8px 20px rgba(26, 12, 12, 0.04);
     }
     .mold{
       text-align: center;
@@ -274,7 +274,7 @@
     /* teachers */
     .teachers{
         display:grid;
-        grid-template-columns:repeat(3,1fr);
+        grid-template-columns:repeat(5,1fr);
         gap:20px;
     }
     
@@ -300,6 +300,36 @@
         font-size:13px;
         color:var(--muted);
     }
+    .mob-hidd{
+      font-size: 11px;
+      text-align: start;
+    }
+    .mob-hidd-t{
+      display: none;
+    }
+    .show-btn {
+      display: block;
+      /* margin: 15px auto; */
+      padding: 10px 20px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .show-btn:active {
+      background: #0056b3;
+    }
+    .show-adjust{
+      display: grid;
+      /* justify-content: center; */
+      align-items: center;
+      /* place-items: center; */
+    }
+
+
 
     /* =========================
    PASSOUT STUDENTS GALLERY
@@ -311,7 +341,7 @@
 
 .passout-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   gap: 16px;
   margin-top: 24px;
 }
@@ -359,14 +389,14 @@
 /* Tablet */
 @media (max-width: 1000px) {
   .passout-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
 /* Mobile */
 @media (max-width: 600px) {
   .passout-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   /* .passout-card img {
@@ -613,7 +643,7 @@ footer .social-links a:hover {
         grid-template-columns:1fr;
       }
       .teachers{
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:repeat(3,1fr);
       }
       .gallery{
         grid-template-columns:repeat(2,1fr);
@@ -630,8 +660,15 @@ footer .social-links a:hover {
         font-size:16px;
       }
       .teachers{
-        grid-template-columns:1fr;
+        grid-template-columns:repeat(2,1fr);
       }
+      .mob-hidd{
+        display:none;
+      }
+      
+    .mob-hidd-t{
+      display: none;
+    }
     }
 
     /* ---------- simple scroll animations ---------- */
@@ -749,14 +786,14 @@ footer .social-links a:hover {
 ========================= */
 
 .year-batches {
-  background: #f5f7fb;
+  background:#dbe9f8;
   padding: 40px 16px 60px;
 }
 
 .year-container {
   max-width: 1200px;
   margin: 0 auto 40px;
-  background: #ebdcfc;
+  background: rgba(247, 247, 255, 0.875);
   border-radius: 10px;
   padding: 20px;
 }
